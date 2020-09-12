@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel='stylesheet'>
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#040301">
+    <meta name="msapplication-TileColor" content="#dee6f0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="preload" href="style/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style/css/style.css"></noscript>
+    <title>Weather App</title>
+</head>
+
+<body class="bg-blue-steel main" onload="createDatabase()" style="background-image: url(images/rain.jpg); background-repeat: no-repeat; background-size: cover">
+    <header>
+        <nav class="nav-bar">
+            <div class="container">
+                <img src="images/logo2.png" class="logo" alt="Logo" height="50px" width="70px">
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <article id="weather_container">
+                <h1 class="text-white text-center font-large">Smash It Weather App</h1>
+                <section>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="row mt-lg-2 mt-md-2">
+                                    <div class="col-xm-12 col-sm-12 col-md-12 col-lg-10">
+                                        <input class="form-control" id="location" type="text"
+                                            placeholder="City, Country eg... London, UK">
+                                        <small class="error" id='error'></small>
+                                    </div>
+                                    <div class="col-xm-12 text-center col-sm-12 col-md-12 col-lg-2">
+                                        <button class="btn btn-primary mt-md-0 mt-lg-0 mt-sm-2  text-white" type="submit">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                    <div class="row">
+<!--                        <div class="col-md-3 col-sm-0 col-xl-3 col-lg-3" ></div>-->
+                        <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12" ><article style="border: none;" id="weather_info" ></article></div>
+<!--                        <div class="col-md-3 col-sm-0 col-xl-3 col-lg-3" ></div>-->
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center text-white">
+            <small class="font-bold">&copy; Create by Horllymobile</small>
+        </div>
+    </footer>
+    <script src="style/js/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="/js/db.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

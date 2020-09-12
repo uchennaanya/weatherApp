@@ -1,0 +1,111 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.font-bold{
+    font-weight: bold !important;
+    font-size: 1em;
+}
+.list-group-item{
+    font-weight: bold !important;
+}
+.error{
+    color: red;
+}
+.head{
+    font-size: 2em !important;
+}
+
+.font-large{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.input{
+    width: 100% !important;
+}
+.title{
+    font-size: 1.5em;
+    color: white;
+}
+
+.temp{
+    font-size: 4em !important;
+}
+
+main{
+/*    min-height: calc(100vh - 48px - 24px) !important;*/
+    background-image: url("assets/images/ucweather2.png");
+}
+.card{
+    width: 100% !important;
+    animation-name: card !important;
+    animation-duration: 5s !important;
+    transition-duration: 1s;
+  }
+  .card-body{
+      transform: translate(2,3) !important;
+  }
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 50px;
+    }
+    .font-large{
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+/*
+    .weather-container{
+        margin: auto;
+        width: 100% !important;
+        border-radius: 0.5em;
+        height: auto;
+        border: solid white 0.3em;
+    }
+*/
+
+    .title{
+        font-size: 1.2em;
+    }
+    .warning{
+        font-size: 1em;
+    }
+    .temp{
+        font-size: 2em !important;
+    }
+    .time{
+        font-size: 0.5em !important;
+    }
+    .head{
+        font-size: 1.5em !important;
+    }
+    .font-large{
+        font-size: 1.5em !important;
+    }
+}
+
+@keyframes body {
+    from {
+        transform: translateX(1);
+        transition-delay: 1s;
+        background-color: white;
+    }
+    to {background:#20B2AA;}
+}
+
+@keyframes card {
+    from {
+        transform: translateX(1) !important;
+        transition-delay: 6s !important;
+        background-color: white !important;
+    }
+    to {background-color: white !important;}
+}
+
+@keyframes card-body{
+    from {
+        transform: translateX(1) !important;
+        transition-delay: 5s !important;
+        background-color: rgb(7, 218, 233) !important; 
+    }
+    to {background-color: white !important;}
+}
